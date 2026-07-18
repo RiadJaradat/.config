@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/rjaradat/Projects/NN/versions/v1.0-effeciant-rewrite/build",
+  "command": "/usr/bin/clang++ -I/home/rjaradat/Projects/NN/versions/v1.0-effeciant-rewrite/include -std=c++26 -g -std=c++23 -O3 -Ofast -ffast-math -march=native -o CMakeFiles/NN.dir/src/main.cpp.o -c /home/rjaradat/Projects/NN/versions/v1.0-effeciant-rewrite/src/main.cpp",
+  "file": "/home/rjaradat/Projects/NN/versions/v1.0-effeciant-rewrite/src/main.cpp",
+  "output": "CMakeFiles/NN.dir/src/main.cpp.o"
+}
+]

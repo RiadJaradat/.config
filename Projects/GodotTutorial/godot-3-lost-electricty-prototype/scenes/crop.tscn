@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://do0ty5sadrpg1"]
+
+[ext_resource type="Script" uid="uid://bm8uox50e5vhr" path="res://scripts/crop.gd" id="1_fe780"]
+[ext_resource type="Texture2D" uid="uid://8hq87skerxdn" path="res://Assets/Objects/Basic_Plants.png" id="2_pfmy0"]
+
+[node name="Crop" type="Node2D" unique_id=2002587622]
+script = ExtResource("1_fe780")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1473060208]
+texture = ExtResource("2_pfmy0")
+region_enabled = true
+region_rect = Rect2(16, 0, 16, 16)
+
+[node name="Timer" type="Timer" parent="." unique_id=2068793736]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g -Wl,--dependency-file=CMakeFiles/nnlib.dir/link.d -shared  -o nnlib.cpython-314-x86_64-linux-gnu.so CMakeFiles/nnlib.dir/src/binding.cpp.o

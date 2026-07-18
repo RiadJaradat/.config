@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cysj1inw1a7lb"]
+
+[ext_resource type="Texture2D" uid="uid://dih21tv2tskrv" path="res://brackeys_platformer_assets/Sprites/Icons/Default/icon_arrow.png" id="1_6wx45"]
+
+[node name="TouchControls" type="CanvasLayer" unique_id=731089562]
+
+[node name="Left" type="TouchScreenButton" parent="." unique_id=1993025493]
+position = Vector2(124, 561)
+rotation = 3.1415927
+scale = Vector2(2.25, 2.25)
+texture_normal = ExtResource("1_6wx45")
+action = "move_left"
+
+[node name="Right" type="TouchScreenButton" parent="." unique_id=1295137911]
+position = Vector2(192.00002, 454)
+scale = Vector2(2.25, 2.25)
+texture_normal = ExtResource("1_6wx45")
+action = "move_right"
+
+[node name="Jump" type="TouchScreenButton" parent="." unique_id=584683692]
+position = Vector2(105.00001, 464)
+rotation = -1.5707964
+scale = Vector2(2.25, 2.25)
+texture_normal = ExtResource("1_6wx45")
+action = "jump"
+
+[node name="Jump2" type="TouchScreenButton" parent="." unique_id=805098399]
+position = Vector2(1042, 559)
+rotation = -1.5707964
+scale = Vector2(2.25, 2.25)
+texture_normal = ExtResource("1_6wx45")
+action = "jump"

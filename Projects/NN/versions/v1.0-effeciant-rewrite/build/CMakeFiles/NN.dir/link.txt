@@ -1,0 +1,1 @@
+/usr/bin/c++ -std=c++26 -Wl,--dependency-file=CMakeFiles/NN.dir/link.d CMakeFiles/NN.dir/src/main.cpp.o -o NN

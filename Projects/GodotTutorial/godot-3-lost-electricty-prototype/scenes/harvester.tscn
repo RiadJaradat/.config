@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://denfcx5p7wa7p"]
+
+[ext_resource type="Script" uid="uid://cg8mflqsqw0bd" path="res://scripts/harvester.gd" id="1_7mvrv"]
+[ext_resource type="Texture2D" uid="uid://bfkv5vxnqxefc" path="res://Assets/Objects/Basic_tools_and_meterials.png" id="2_7uons"]
+
+[node name="harvester" type="Node2D" unique_id=1676187751]
+script = ExtResource("1_7mvrv")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=861022431]
+texture = ExtResource("2_7uons")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="Timer" type="Timer" parent="." unique_id=220678351]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

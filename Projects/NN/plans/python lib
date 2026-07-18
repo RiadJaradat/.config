@@ -1,0 +1,48 @@
+1. pybind11 (best modern way 👍)
+
+This is the most popular and clean approach.
+
+What you do:
+Write a small C++ “binding” file
+Include your header
+Expose functions/classes to Python
+Compile into a Python module (.so / .pyd)
+Example
+C++ header (mylib.hpp)
+#pragma once
+
+int add(int a, int b);
+C++ implementation (mylib.cpp)
+#include "mylib.hpp"
+
+int add(int a, int b) {
+    return a + b;
+}
+Python binding (bindings.cpp)
+#include <pybind11/pybind11.h>
+#include "mylib.hpp"
+
+namespace py = pybind11;
+
+PYBIND11_MODULE(mylib, m) {
+    m.def("add", &add);
+}
+Build (CMake example)
+cmake_minimum_required(VERSION 3.10)
+project(mylib)
+
+add_subdirectory(pybind11)
+
+pybind11_add_module(mylib bindings.cpp mylib.cpp)
+
+Then:
+
+mkdir build
+cd build
+cmake ..
+make
+
+Now in Python:
+
+import mylib
+print(mylib.add(2, 3))

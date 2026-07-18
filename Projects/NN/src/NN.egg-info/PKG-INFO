@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: NN
+Version: 0.1.0
+Summary: C++ Neural Network with pybind11
+Requires-Python: >=3.8

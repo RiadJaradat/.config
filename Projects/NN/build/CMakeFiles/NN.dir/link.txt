@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -std=c++26 -g -Wl,--dependency-file=CMakeFiles/NN.dir/link.d -shared  -o NN.cpython-314-x86_64-linux-gnu.so CMakeFiles/NN.dir/src/binding.cpp.o

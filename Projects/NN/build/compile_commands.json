@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/rjaradat/Projects/NN/build",
+  "command": "/usr/bin/c++ -DNN_EXPORTS -I/home/rjaradat/Projects/NN/include -isystem /usr/include/python3.14 -std=c++26 -g -std=gnu++17 -fPIC -fvisibility=hidden -o CMakeFiles/NN.dir/src/binding.cpp.o -c /home/rjaradat/Projects/NN/src/binding.cpp",
+  "file": "/home/rjaradat/Projects/NN/src/binding.cpp",
+  "output": "CMakeFiles/NN.dir/src/binding.cpp.o"
+}
+]
