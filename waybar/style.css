@@ -1,0 +1,152 @@
+* {
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+window#waybar {
+    background: transparent;
+    color: white;
+}
+
+/* -------------------------
+   Buttons
+------------------------- */
+
+button {
+    border: none;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* -------------------------
+   Workspaces
+------------------------- */
+
+#workspaces {
+    margin: 4px;
+}
+
+#workspaces button {
+    padding: 0 10px;
+    margin: 4px;
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+    background: rgba(255, 255, 255, 0.20);
+}
+
+#workspaces button.urgent {
+    background: rgba(255, 80, 80, 0.35);
+}
+
+/* -------------------------
+   Common Modules
+------------------------- */
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#mpd,
+#language,
+#keyboard-state,
+#privacy {
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 0 12px;
+    margin: 4px;
+}
+
+/* -------------------------
+   States
+------------------------- */
+
+#battery.charging,
+#battery.plugged {
+    background: rgba(60, 180, 75, 0.20);
+}
+
+#battery.critical:not(.charging) {
+    background: rgba(255, 60, 60, 0.30);
+}
+
+#network.disconnected {
+    background: rgba(255, 60, 60, 0.25);
+}
+
+#pulseaudio.muted,
+#wireplumber.muted {
+    opacity: 0.5;
+}
+
+#temperature.critical {
+    background: rgba(255, 60, 60, 0.25);
+}
+
+#idle_inhibitor.activated {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+#scratchpad.empty {
+    background: transparent;
+}
+
+/* -------------------------
+   Tray
+------------------------- */
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+/* -------------------------
+   Privacy
+------------------------- */
+
+#privacy {
+    padding: 0;
+}
+
+#privacy-item {
+    color: white;
+    padding: 0 6px;
+    background: transparent;
+}
+
+/* -------------------------
+   Window title
+------------------------- */
+
+#window {
+    color: white;
+    margin: 4px;
+}
